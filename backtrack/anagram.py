@@ -1,5 +1,5 @@
 def all_perms(elements):
-    if len(elements) <=1:
+    if len(elements) <= 1:
         yield elements
     else:
         for perm in all_perms(elements[1:]):
@@ -7,7 +7,7 @@ def all_perms(elements):
                 yield perm[:i] + elements[0:1] + perm[i:]
 
 def all_perms(elements):
-    if len(elements) <=1:
+    if len(elements) <= 1:
         return elements
     else:
         tmp = []
@@ -16,7 +16,7 @@ def all_perms(elements):
                 tmp.append(perm[:i] + elements[0:1] + perm[i:])
         return tmp
 
-word = "Joshua"
+word = "APPLE"
 print list(all_perms(word))
 
 def anagram(s1,s2):
@@ -41,4 +41,4 @@ def anagram(s1,s2):
 
     return stillOK
 
-print(anagram('apple','pleap'))
+print(anagram('apple','pleagp'))
