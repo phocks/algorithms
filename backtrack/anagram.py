@@ -16,7 +16,7 @@ def all_perms(elements):
                 tmp.append(perm[:i] + elements[0:1] + perm[i:])
         return tmp
 
-word = "abc"
+word = "Joshua"
 print list(all_perms(word))
 
 def anagram(s1,s2):
